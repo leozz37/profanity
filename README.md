@@ -1,6 +1,4 @@
-# Random Offense Generator
-
-> TODO: English support
+# Gerador de Xingamentos Aleatórios
 
 API para gerar xingamentos aleatórios. Você pode acessá-lo pelo [link](https://offensive-profanity.herokuapp.com/).
 
