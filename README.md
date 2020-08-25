@@ -1,8 +1,6 @@
 # Gerador de Xingamentos Aleatórios
 
-Inspirado no [xingar.me](https://github.com/alvarowolfx/xinga.me), porém com ofensas LGBTQ friendly.
-
-API para gerar xingamentos aleatórios. Você pode acessá-lo pelo [link](https://offensive-profanity.herokuapp.com/).
+API para gerar xingamentos aleatórios, inspirado no [xingar.me](https://github.com/alvarowolfx/xinga.me), porém com xingamentos LGBTQ friendly. Você pode acessá-lo pelo [link](https://offensive-profanity.herokuapp.com/).
 
 > https://offensive-profanity.herokuapp.com/
 
