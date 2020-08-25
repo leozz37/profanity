@@ -36,8 +36,8 @@ jobs:
     - name: Test
       run: go test -cover -v . > test-report.out
 
-      - name: Archive test result
-        uses: actions/upload-artifact@v2
-        with:
-          name: test-report
-          path: test-report.out
+    - name: Archive test result
+      uses: actions/upload-artifact@v2
+      with:
+        name: test-report
+        path: test-report.out
