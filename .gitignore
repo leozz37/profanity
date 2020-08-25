@@ -16,3 +16,4 @@
 bin/
 .env
 profanity
+test.out
