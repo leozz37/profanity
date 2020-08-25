@@ -2,7 +2,7 @@
 
 API para gerar xingamentos aleatórios, inspirado no [xingar.me](https://github.com/alvarowolfx/xinga.me), porém com xingamentos LGBTQ friendly. Você pode acessá-lo pelo [link](https://offensive-profanity.herokuapp.com/).
 
-> https://offensive-profanity.herokuapp.com/
+> <https://offensive-profanity.herokuapp.com/>
 
 Esse projeto não apoia nenhum tipo de ódio, todas os xingamentos foram cuidadosamente criados visando não ofender ou prejudicar nenhum grupo social. 
 
