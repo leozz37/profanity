@@ -4,7 +4,6 @@ import (
 	"bytes"
 	"fmt"
 	"io/ioutil"
-	"encoding/json"
 	"github.com/gorilla/mux"
 	"time"
 	"log"
@@ -13,17 +12,10 @@ import (
 	"os"
 )
 
-type Xingamento struct {
-	Value string `json:"xingamento"`
-}
-
-func NewRandomXingamento() Xingamento {
-	return Xingamento{
-		Value: fmt.Sprintf("%s %s",
-			getRandomFromFile("data/first.txt"),
-			getRandomFromFile("data/last.txt"),
-		),
-	}
+func NewRandomXingamento() string {
+	return fmt.Sprintf("%s %s",
+		getRandomFromFile("data/first.txt"),
+		getRandomFromFile("data/last.txt"),)
 }
 
 func getRandomFromFile(file string) string {
@@ -34,7 +26,7 @@ func getRandomFromFile(file string) string {
 }
 
 func GetWord(w http.ResponseWriter, r *http.Request) {
-	json.NewEncoder(w).Encode(NewRandomXingamento())
+	fmt.Fprintln(w, NewRandomXingamento())
 }
 
 func main() {
