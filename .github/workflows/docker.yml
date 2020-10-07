@@ -1,0 +1,23 @@
+name: Docker builds
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+
+jobs:
+  setup:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v2
+
+  build:
+    runs-on: ubuntu-latest
+    needs: [setup]
+    steps:    
+      - name: Build Docker
+        run: docker build -t profanity .
